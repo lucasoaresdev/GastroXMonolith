@@ -64,7 +64,7 @@ A solução está organizada da seguinte forma:
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/GastroXMonolith.git
+   git clone https://github.com/lucasoaresdev/GastroXMonolith.git
    cd GastroXMonolith
    ```
 
