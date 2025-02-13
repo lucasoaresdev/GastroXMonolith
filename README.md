@@ -64,7 +64,7 @@ A solução está organizada da seguinte forma:
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/GastroXMonolith.git
+   git clone https://github.com/lucasoaresdev/GastroXMonolith.git
    cd GastroXMonolith
    ```
 
@@ -118,5 +118,5 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## Contato
 
-- **Email:** [lucasoaresdev@gmail.com] (mailto:lucasoaresdev@gmail.com)
+- **Email:** [lucasoaresdev@gmail.com](mailto:lucasoaresdev@gmail.com)
 - **GitHub:** [lucasoaresdev](https://github.com/lucasoaresdev)
