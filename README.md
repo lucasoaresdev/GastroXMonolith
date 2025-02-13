@@ -118,5 +118,5 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## Contato
 
-- **Email:** [lucasoaresdev@gmail.com] (mailto:lucasoaresdev@gmail.com)
+- **Email:** [lucasoaresdev@gmail.com](mailto:lucasoaresdev@gmail.com)
 - **GitHub:** [lucasoaresdev](https://github.com/lucasoaresdev)
