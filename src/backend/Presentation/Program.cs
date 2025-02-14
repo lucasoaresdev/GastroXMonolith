@@ -8,20 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Adiciona serviços para os controllers
 builder.Services.AddControllers();
 
-// Registra os serviços específicos da camada de Presentation
-builder.Services.AddPresentationServices(builder.Configuration);
-
-// Configura o Swagger para documentação da API
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.AddConfiguration();
+builder.AddDatabase();
+builder.AddJwtAuthentication();
+builder.AddMediator();
+builder.AddSwagger();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwaggerEX();
 
 app.UseHttpsRedirection();
 
