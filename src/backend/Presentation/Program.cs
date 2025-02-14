@@ -1,12 +1,17 @@
-// Exemplo simplificado em Program.cs
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Presentation.Extensions; // Namespace da classe de extensão que criamos
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Registro dos serviços
+// Adiciona serviços para os controllers
 builder.Services.AddControllers();
-builder.Services.AddApplication();       // Método de extensão para Application
-builder.Services.AddInfrastructure(builder.Configuration); // Método de extensão para Infrastructure
 
-// Configuração do Swagger, etc.
+// Registra os serviços específicos da camada de Presentation
+builder.Services.AddPresentationServices(builder.Configuration);
+
+// Configura o Swagger para documentação da API
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -19,6 +24,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();
