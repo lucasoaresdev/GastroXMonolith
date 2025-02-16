@@ -13,10 +13,13 @@ builder.AddDatabase();
 builder.AddJwtAuthentication();
 builder.AddMediator();
 builder.AddSwagger();
+builder.AddCustomerContext();
 
 var app = builder.Build();
 
 app.UseSwaggerEX();
+
+app.MapCustomerEndpoints();
 
 app.UseHttpsRedirection();
 

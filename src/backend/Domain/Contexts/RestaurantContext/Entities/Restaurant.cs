@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities;
+﻿namespace Domain.Contexts.GlobalContext.Entities;
 
 public class Restaurant : Entity
 {
